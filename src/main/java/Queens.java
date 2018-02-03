@@ -7,6 +7,8 @@ public class Queens {
 
     private Set<Board> generate(Board board, int row, Set<Board> result) {
         final int size = board.getSize();
+        // the search space is broken by rows
+        // we try to place a queen on each column for the current row
         for (int c=0; c < size; c++) {
             if(board.tryPlace(row, c)) {
                 if (row == size - 1) { result.add(new Board(board)); }
