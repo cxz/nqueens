@@ -1,0 +1,23 @@
+//buildscript {
+//    apply from: file('gradle/buildscript.gradle'), to: buildscript
+//}
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+
+//apply plugin: 'org.anarres.stdproject'
+//stdproject {
+//}
+
+//apply plugin: 'org.anarres.stdmodule'
+//stdmodule {
+//}
+
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}

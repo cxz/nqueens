@@ -1,0 +1,10 @@
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	jcenter()
+}
+
+dependencies {
+	classpath 'org.anarres.gradle:gradle-stdproject-plugin:1.0.2'
+}
